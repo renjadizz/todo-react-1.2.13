@@ -1,11 +1,11 @@
+import './Task.css';
 
-
-const Task = () => {
+const Task = ({itemText}) => {
     return (
-        <label>
-            <span className="description">Completed task</span>
-            <span className="created">created 17 seconds ago</span>
-        </label>
+        <>
+            <span className="description">{itemText.description}</span>
+            <span className="created">{itemText.created}</span>
+        </>
     );
 }
 
